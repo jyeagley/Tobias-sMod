@@ -1,5 +1,8 @@
 {
   "itemGroup.tobiassmod": "Tobias's Mod Tab",
   "item.tobiassmod.bismuth": "Bismuth",
-  "item.tobiassmod.raw_bismuth": "Raw Bismuth"
+  "item.tobiassmod.raw_bismuth": "Raw Bismuth",
+
+  "block.tobiassmod.bismuth_block": "Bismuth Block",
+  "block.tobiassmod.bismuth_ore": "Bismuth Ore"
 }
