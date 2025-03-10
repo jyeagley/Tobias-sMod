@@ -39,6 +39,11 @@ public class ModBlocks {
             )
     );
 
+    public static final DeferredBlock<Block> KILL_BUTTON = registerBlock(
+            "kill_button",
+            () -> new KillButton(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_BUTTON))
+    );
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
     {

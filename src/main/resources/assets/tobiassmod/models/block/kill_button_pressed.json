@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "tobiassmod:block/kill_button_pressed"
+  }
+}

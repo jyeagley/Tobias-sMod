@@ -4,5 +4,10 @@
   "item.tobiassmod.raw_bismuth": "Raw Bismuth",
 
   "block.tobiassmod.bismuth_block": "Bismuth Block",
-  "block.tobiassmod.bismuth_ore": "Bismuth Ore"
+  "block.tobiassmod.bismuth_ore": "Bismuth Ore",
+
+  "block.tobiassmod.kill_button": "Kill Button",
+  "item.tobiassmod.kill_button": "Kill Button",
+
+  "creativetab.tobiassmod.tobiass_tab": "Tobias's Mod"
 }

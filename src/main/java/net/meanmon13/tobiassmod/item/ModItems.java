@@ -1,6 +1,7 @@
 package net.meanmon13.tobiassmod.item;
 
 import net.meanmon13.tobiassmod.TobiassMod;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;

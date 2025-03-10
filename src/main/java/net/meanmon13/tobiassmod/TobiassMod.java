@@ -1,6 +1,7 @@
 package net.meanmon13.tobiassmod;
 
 import net.meanmon13.tobiassmod.block.ModBlocks;
+import net.meanmon13.tobiassmod.item.ModCreativeModeTabs;
 import net.meanmon13.tobiassmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -31,6 +32,7 @@ public class TobiassMod
     private static final Logger LOGGER = LogUtils.getLogger();
     // Create a Deferred Register to hold Blocks which will all be registered under the "examplemod" namespace
 
+
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public TobiassMod(IEventBus modEventBus, ModContainer modContainer)
@@ -42,6 +44,8 @@ public class TobiassMod
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
@@ -55,7 +59,8 @@ public class TobiassMod
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
+        LOGGER.info("Hello from Tobias's Mod.");
+        LOGGER.info("You like our button? Its configured to have a range of {}", Config.killButtonRadius.toString());
     }
 
     // Add block items to the building blocks tab
